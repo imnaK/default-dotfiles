@@ -92,4 +92,11 @@ if ! shopt -oq posix; then
 fi
 
 # The digital welcome committee
-[[ -f ~/.banner.txt ]] && cat ~/.banner.txt
+if [[ -f ~/.banner.txt ]]; then
+  if command -v lolcat &> /dev/null; then
+    cat ~/.banner.txt | lolcat
+  else
+    cat ~/.banner.txt
+  fi
+fi
+
