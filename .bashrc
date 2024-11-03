@@ -78,7 +78,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # Alias definitions.
-[[ -f ~/.bash_aliases ]] && source ~/.bash_aliases
+[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -90,3 +90,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# The digital welcome committee
+[[ -f ~/.banner.txt ]] && cat ~/.banner.txt
