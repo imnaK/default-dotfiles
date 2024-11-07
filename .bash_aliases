@@ -13,6 +13,8 @@ alias ll="ls -lAh --ignore='.?*'"
 # Quick access to your editor and pager—because who has time for extra keystrokes?
 alias e='$EDITOR'
 alias p='$PAGER'
+# Also superpower editor
+alias swim='sudo $EDITOR'
 
 # The Holy Trinity of "Oops Prevention"
 alias cp="cp -i"
