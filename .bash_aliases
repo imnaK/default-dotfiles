@@ -49,7 +49,7 @@ baka() {
   fi
   local file="$1"
   if [ -e "$file" ]; then
-    mv -i "$file" "${file}.baka"
+    cp -i "$file" "${file}.baka"
     echo "Sent '$file' to the corner. It's '${file}.baka' now."
   else
     echo "Can't find '$file'. Is it hiding from its punishment?"
