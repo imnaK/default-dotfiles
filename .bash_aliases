@@ -24,6 +24,8 @@ alias rm="rm -i"
 # An alert for when your long-running commands finally decide to finish
 # Use like so: "sleep 10; alert"
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# hurensohn
+alias hurensohn='cut -d: -f1,3,4 /etc/passwd | awk -F: '\''{printf "%-27s %-7s %-8s\n", $1, $2, $3}'\'''
 
 # Navigate up to the nearest Git repository—like a treasure hunt, but less exciting
 cdgit() {
