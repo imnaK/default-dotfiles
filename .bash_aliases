@@ -7,8 +7,8 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Because who has time for extra keystrokes?
-alias l="ls -lAh"
-alias ll="ls -lAh --ignore='.?*'"
+alias l="ls -AlFh"
+alias ll="ls -AlFh --ignore='.?*'"
 
 # Quick access to your editor and pager—because who has time for extra keystrokes?
 alias e='$EDITOR'
