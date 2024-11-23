@@ -79,6 +79,7 @@ fi
 
 # Alias definitions.
 [[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
+[[ -f ~/.bash_aliases_extra ]] && . ~/.bash_aliases_extra
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
